@@ -9,6 +9,7 @@
     securityType = "user";
     extraConfig = "
       workgroup = WORKGROUP
+      min protocol = SMB2
       guest account = nobody
       map to guest = bad user
       encrypt passwords = yes
