@@ -20,7 +20,7 @@
     }
     {
       mountPoint = "/mnt/smb/console";
-      device = "//axel-parolta-desktop.local/console";
+      device = "//mtetreault-desktop.local/console";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
@@ -30,7 +30,7 @@
     }
     {
       mountPoint = "/mnt/smb/ebook";
-      device = "//axel-parolta-desktop.local/ebook";
+      device = "//mtetreault-desktop.local/ebook";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
@@ -40,7 +40,7 @@
     }
     {
       mountPoint = "/mnt/smb/famille";
-      device = "//axel-parolta-desktop.local/famille";
+      device = "//mtetreault-desktop.local/famille";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
@@ -50,7 +50,7 @@
     }
     {
       mountPoint = "/mnt/smb/mtetreault";
-      device = "//axel-parolta-desktop.local/mtetreault";
+      device = "//mtetreault-desktop.local/mtetreault";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
@@ -60,7 +60,7 @@
     }
     {
       mountPoint = "/mnt/smb/software";
-      device = "//axel-parolta-desktop.local/software";
+      device = "//mtetreault-desktop.local/software";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
@@ -70,7 +70,7 @@
     }
     {
       mountPoint = "/mnt/smb/video";
-      device = "//axel-parolta-desktop.local/video";
+      device = "//mtetreault-desktop.local/video";
       fsType = "cifs";
       options = let
         # this line prevents hanging on network split
