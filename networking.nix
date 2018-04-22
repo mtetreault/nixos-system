@@ -4,6 +4,9 @@
   networking = {
     hostName = "mtetreault-desktop";
     useDHCP = true;
+
+    firewall.allowedTCPPorts = [ 139 445 ];
+    firewall.allowedUDPPorts = [ 137 138 ];
   };
 
   services.avahi = {
