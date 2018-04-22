@@ -7,7 +7,6 @@
      libu2f-host
      python3
      gnupg
-     redshift
      rawtherapee
      config.services.samba.package
      transmission_gtk
@@ -17,5 +16,6 @@
      unzip
      gparted
      galculator
+     xarchiver
      ];
 }
