@@ -14,8 +14,10 @@
      geoclue2
      discord
      slack
-     teamviewer
      plex
+     inkscape
+     wine
+     putty
      ];
 
   nixpkgs.config.packageOverrides = pkgs: with pkgs; {
@@ -36,6 +38,10 @@
     virtualbox.host.enable = true;
   };
 
+  services.plex = {
+    openFirewall = true;
+    enable = true;
+    managePlugins = false;
+  };
   nixpkgs.config.virtualbox.enableExtensionPack = true;
-  services.teamviewer.enable = true;
 }
