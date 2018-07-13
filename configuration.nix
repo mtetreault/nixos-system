@@ -20,6 +20,7 @@
       ./udev.nix
       ./users.nix
       ./xserver.nix
+      <nixpkgs/nixos/modules/services/hardware/sane_extra_backends/brscan4.nix>
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -27,6 +28,15 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   hardware.opengl.driSupport32Bit = true;
+  hardware.sane = {
+    enable = true;
+    brscan4 = {
+      enable = true;
+      netDevices = {
+        home = { model = "DCP-L2540DW"; nodename = "BRN30055C972F9A";};
+      };
+    };
+  };
 
   nixpkgs.config.allowUnfree = true;
 

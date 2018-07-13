@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
      google-chrome
-     messenger-for-desktop
      vscode     
      hexchat
      keepass
@@ -18,6 +17,9 @@
      inkscape
      wine
      putty
+     gimp
+     bluedevil
+     simple-scan
      ];
 
   nixpkgs.config.packageOverrides = pkgs: with pkgs; {
