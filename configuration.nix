@@ -19,6 +19,7 @@
       ./to_move.nix
       ./udev.nix
       ./users.nix
+      ./virtualbox.nix
       ./xserver.nix
       <nixpkgs/nixos/modules/services/hardware/sane_extra_backends/brscan4.nix>
     ];
@@ -37,7 +38,7 @@
       };
     };
   };
-
+  sound.enable = true;
   nixpkgs.config.allowUnfree = true;
 
   # This value determines the NixOS release with which your system is to be

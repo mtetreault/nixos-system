@@ -6,7 +6,6 @@
      vscode     
      hexchat
      keepass
-     virtualbox
      vagrant
      insync
      pidgin-with-plugins
@@ -36,14 +35,9 @@
      };
   };
   
-  virtualisation = {
-    virtualbox.host.enable = true;
-  };
-
   services.plex = {
     openFirewall = true;
     enable = true;
     managePlugins = false;
   };
-  nixpkgs.config.virtualbox.enableExtensionPack = true;
 }
